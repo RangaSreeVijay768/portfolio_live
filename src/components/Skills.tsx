@@ -1,6 +1,5 @@
-
 import { useState, useEffect, useRef } from 'react';
-import { Code, Database, Terminal, Zap } from 'lucide-react';
+import { Cloud, Code, Database, GitBranch, Smartphone, Terminal, User, Zap } from 'lucide-react';
 
 const Skills = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -23,52 +22,151 @@ const Skills = () => {
     return () => observer.disconnect();
   }, []);
 
+
   const skillCategories = [
     {
-      title: 'Frontend Development',
+      title: 'Frontend',
       icon: Code,
       skills: [
-        { name: 'ReactJS', level: 90 },
-        { name: 'HTML/CSS', level: 95 },
-        { name: 'JavaScript', level: 88 },
-        { name: 'TypeScript', level: 80 },
-        { name: 'Bootstrap', level: 85 },
-        { name: 'Tailwind CSS', level: 82 }
+        { name: 'HTML' },
+        { name: 'CSS' },
+        { name: 'JavaScript' },
+        { name: 'TypeScript' },
+        { name: 'Bootstrap' }
       ]
     },
     {
-      title: 'Backend Development',
+      title: 'Backend',
       icon: Terminal,
       skills: [
-        { name: 'Node.js', level: 85 },
-        { name: 'Express.js', level: 88 },
-        { name: 'Python', level: 75 },
-        { name: 'REST APIs', level: 90 },
-        { name: 'JWT Auth', level: 85 }
+        { name: 'NodeJS' },
+        { name: 'ExpressJS' },
+        { name: 'Python' },
+        { name: 'Java' },
+        { name: 'C' }
+      ]
+    },
+    {
+      title: 'Web Frameworks',
+      icon: Code,
+      skills: [
+        { name: 'ReactJS' },
+        { name: 'AngularJS' },
+        { name: 'NextJS' },
+        { name: 'Figma ( UI to Code )' }
+      ]
+    },
+    {
+      title: 'Mobile Development',
+      icon: Smartphone,
+      skills: [
+        { name: 'Flutter' },
+        { name: 'Dart' },
+        { name: 'React Native' },
+        { name: 'Ionic' },
       ]
     },
     {
       title: 'Databases',
       icon: Database,
       skills: [
-        { name: 'MongoDB', level: 88 },
-        { name: 'PostgreSQL', level: 80 },
-        { name: 'MySQL', level: 78 },
-        { name: 'Firebase', level: 85 }
+        { name: 'MySQL' },
+        { name: 'PostgreSQL' },
+        { name: 'MongoDB' },
+        { name: 'Firebase' },
       ]
     },
     {
-      title: 'Mobile & Tools',
+      title: 'Cloud & Deployment',
+      icon: Cloud,
+      skills: [
+        { name: 'Amazon Web Services (AWS) ' },
+        { name: 'Google Cloud Platform (GCP)' },
+        { name: 'CI/CD' },
+        { name: 'Vercel' },
+        { name: 'Netlify' },
+      ]
+    },
+    {
+      title: 'Version Control & Tools',
+      icon: GitBranch,
+      skills: [
+        { name: 'Git' },
+        { name: 'GitHub' },
+        { name: 'GitLab' },
+        { name: 'Git Bash' },
+      ]
+    },
+    {
+      title: 'APIs & Integrations',
       icon: Zap,
       skills: [
-        { name: 'Flutter', level: 85 },
-        { name: 'Dart', level: 82 },
-        { name: 'Git', level: 90 },
-        { name: 'AWS', level: 70 },
-        { name: 'Docker', level: 65 }
+        { name: 'Google Drive API' },
+        { name: 'Google Maps API' },
+        { name: 'Firebase Auth' },
+        { name: 'Razorpay API' }
       ]
     }
   ];
+
+
+  // const skillCategories = [
+  //   {
+  //     title: 'Frontend Development',
+  //     icon: Code,
+  //     skills: [
+  //       { name: 'ReactJS', level: 90 },
+  //       { name: 'HTML/CSS', level: 95 },
+  //       { name: 'JavaScript', level: 88 },
+  //       { name: 'TypeScript', level: 80 },
+  //       { name: 'Bootstrap', level: 85 },
+  //       { name: 'Tailwind CSS', level: 82 }
+  //     ]
+  //   },
+  //   {
+  //     title: 'Backend Development',
+  //     icon: Terminal,
+  //     skills: [
+  //       { name: 'Node.js', level: 85 },
+  //       { name: 'Express.js', level: 88 },
+  //       { name: 'Python', level: 75 },
+  //       { name: 'REST APIs', level: 90 },
+  //       { name: 'JWT Auth', level: 85 }
+  //     ]
+  //   },
+  //   {
+  //     title: 'Databases',
+  //     icon: Database,
+  //     skills: [
+  //       { name: 'MongoDB', level: 88 },
+  //       { name: 'PostgreSQL', level: 80 },
+  //       { name: 'MySQL', level: 78 },
+  //       { name: 'Firebase', level: 85 }
+  //     ]
+  //   },
+  //   {
+  //     title: 'Mobile & Tools',
+  //     icon: Zap,
+  //     skills: [
+  //       { name: 'Flutter', level: 85 },
+  //       { name: 'Dart', level: 82 },
+  //       { name: 'Git', level: 90 },
+  //       { name: 'AWS', level: 70 },
+  //       { name: 'Docker', level: 65 }
+  //     ]
+  //   },
+  //       {
+  //     title: 'Mobile & Tools',
+  //     icon: Zap,
+  //     skills: [
+  //       { name: 'Flutter', level: 85 },
+  //       { name: 'Dart', level: 82 },
+  //       { name: 'Git', level: 90 },
+  //       { name: 'AWS', level: 70 },
+  //       { name: 'Docker', level: 65 }
+  //     ]
+  //   }
+  // ];
 
   return (
     <section id="skills" className="py-20 bg-slate-900" ref={sectionRef}>
@@ -85,7 +183,7 @@ const Skills = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {skillCategories.map((category, categoryIndex) => (
-            <div 
+            <div
               key={categoryIndex}
               className="glass-card p-6 hover:scale-105 transition-all duration-300 animate-fade-in"
               style={{ animationDelay: `${categoryIndex * 0.2}s` }}
@@ -95,22 +193,21 @@ const Skills = () => {
                 <h3 className="text-xl font-semibold text-white">{category.title}</h3>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex}>
-                    <div className="flex justify-between mb-2">
-                      <span className="text-gray-300 text-sm">{skill.name}</span>
-                      <span className="text-blue-400 text-sm">{skill.level}%</span>
-                    </div>
-                    <div className="skill-bar">
-                      <div 
-                        className={`skill-progress ${isVisible ? 'w-full' : 'w-0'}`}
-                        style={{ 
-                          width: isVisible ? `${skill.level}%` : '0%',
-                          transitionDelay: `${(categoryIndex * 0.2) + (skillIndex * 0.1)}s`
-                        }}
-                      ></div>
-                    </div>
+                  <div
+                    key={skillIndex}
+                    className="flex justify-between items-center bg-slate-800 px-3 py-2 rounded-lg shadow-inner"
+                  >
+                    <span className="text-gray-300 text-sm">{skill.name}</span>
+                    <span className="bg-slate-700 px-1 py-1 rounded-full flex items-center justify-center">
+                      <input
+                        type="radio"
+                        checked
+                        readOnly
+                        className="accent-blue-400 w-3 h-3"
+                      />
+                    </span>
                   </div>
                 ))}
               </div>
@@ -123,10 +220,10 @@ const Skills = () => {
           <h3 className="text-2xl font-semibold mb-8 text-white">Additional Technologies</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              'Angular', 'Vue.js', 'Next.js', 'GraphQL', 'Redux', 'Jest', 
+              'Angular', 'Vue.js', 'Next.js', 'GraphQL', 'Redux', 'Jest',
               'Webpack', 'Sass', 'Figma', 'Postman', 'Linux', 'Nginx'
             ].map((tech, index) => (
-              <span 
+              <span
                 key={index}
                 className="px-4 py-2 glass-card text-sm text-gray-300 hover:text-white hover:scale-110 transition-all duration-300 animate-scale-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
