@@ -93,69 +93,69 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-background to-slate-900">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
+    <section id="contact" className="py-12 md:py-20 bg-gradient-to-b from-background to-slate-900 overflow-hidden">
+      <div className="container mx-auto px-6 sm:px-4">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 gradient-text">
             Get In Touch
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-6"></div>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-400 max-w-2xl mx-auto px-4">
             I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.
             Feel free to reach out!
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 md:gap-12">
           {/* Contact Information */}
-          <div className="animate-slide-in-left">
-            <h3 className="text-2xl font-bold mb-8 text-white">
+          <div className="w-full">
+            <h3 className="text-2xl font-bold mb-6 md:mb-8 text-white">
               Let's Connect
             </h3>
 
-            <div className="space-y-6 mb-8">
+            <div className="space-y-4 md:space-y-6 mb-6 md:mb-8">
               {contactInfo.map((info, index) => (
                 <a
                   key={index}
                   href={info.link}
-                  className="flex items-center gap-4 glass-card p-4 hover:scale-105 hover:bg-white/20 transition-all duration-300 group"
+                  className="flex items-center gap-4 glass-card p-4 hover:scale-105 hover:bg-white/20 transition-all duration-300 group w-full"
                 >
                   <div className="p-3 bg-blue-500/20 rounded-full group-hover:bg-blue-500/30 transition-colors duration-300">
                     <info.icon className="text-blue-400" size={24} />
                   </div>
-                  <div>
-                    <h4 className="text-white font-semibold">{info.title}</h4>
-                    <p className="text-gray-400">{info.value}</p>
+                  <div className="overflow-hidden">
+                    <h4 className="text-white font-semibold truncate">{info.title}</h4>
+                    <p className="text-gray-400 truncate">{info.value}</p>
                   </div>
                 </a>
               ))}
             </div>
 
             {/* Social Links */}
-            <div className="mb-8">
-              <h4 className="text-lg font-semibold text-white mb-4">Follow Me</h4>
-              <div className="flex gap-4">
+            <div className="mb-6 md:mb-8">
+              <h4 className="text-lg font-semibold text-white mb-3 md:mb-4">Follow Me</h4>
+              <div className="flex gap-3 md:gap-4">
                 {socialLinks.map((social, index) => (
                   <a
                     key={index}
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`p-3 glass-card rounded-full hover:scale-110 transition-all duration-300 ${social.color}`}
+                    className={`p-2 md:p-3 glass-card rounded-full hover:scale-110 transition-all duration-300 ${social.color}`}
                     title={social.name}
                   >
-                    <social.icon size={24} />
+                    <social.icon size={20} className="md:w-6 md:h-6" />
                   </a>
                 ))}
               </div>
             </div>
 
             {/* Available for Work */}
-            <div className="glass-card p-6 border-l-4 border-green-400">
+            <div className="glass-card p-4 md:p-6 border-l-4 border-green-400">
               <h4 className="text-lg font-semibold text-white mb-2">
                 🟢 Available for Work
               </h4>
-              <p className="text-gray-400">
+              <p className="text-gray-400 text-sm md:text-base">
                 I'm currently open to new opportunities and exciting projects.
                 Let's discuss how we can work together!
               </p>
@@ -163,14 +163,14 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="animate-slide-in-right">
-            <form onSubmit={handleSubmit} className="glass-card p-8">
+          <div className="w-full mt-8 md:mt-0">
+            <form onSubmit={handleSubmit} className="glass-card p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-6 text-white">
                 Send Message
               </h3>
 
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
-                <div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-4 md:mb-6">
+                <div className="col-span-1">
                   <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                     Your Name
                   </label>
@@ -186,7 +186,7 @@ const Contact = () => {
                   />
                 </div>
 
-                <div>
+                <div className="col-span-1">
                   <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
                     Email Address
                   </label>
@@ -203,7 +203,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="mb-6">
+              <div className="mb-4 md:mb-6">
                 <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
                   Subject
                 </label>
@@ -238,7 +238,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? (
                   <>
@@ -247,7 +247,7 @@ const Contact = () => {
                   </>
                 ) : (
                   <>
-                    <Send size={20} />
+                    <Send size={18} className="md:w-5 md:h-5" />
                     Send Message
                   </>
                 )}
@@ -256,8 +256,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
 };
 
 export default Contact;

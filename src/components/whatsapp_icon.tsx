@@ -23,7 +23,7 @@ const WhatsAppButton: React.FC = () => {
     if (showPopup) {
       setTypedMessage(''); // Reset message when modal opens
       let i = 0;
-      
+
       typingTimeoutRef.current = setInterval(() => {
         if (i < fullMessage.length) {
           setTypedMessage(prev => prev + fullMessage.charAt(i));
@@ -32,7 +32,7 @@ const WhatsAppButton: React.FC = () => {
           clearInterval(typingTimeoutRef.current);
         }
       }, 20); // Adjust typing speed here (lower = faster)
-      
+
       return () => {
         clearInterval(typingTimeoutRef.current);
       };
@@ -79,9 +79,11 @@ const WhatsAppButton: React.FC = () => {
       {/* Popup */}
       <div
         ref={popupRef}
-        className={`fixed bottom-24 right-6 w-80 max-w-[90%] z-[10000] shadow-lg ${showPopup ? 'animate-scale-in' :
-          isAnimatingOut ? 'animate-scale-out' : 'hidden'
-          }`}
+        className={`fixed bottom-24 right-6 w-80 max-w-[90%] z-[10000] shadow-lg
+  ${showPopup && !isAnimatingOut ? 'animate-scale-in' : ''}
+  ${isAnimatingOut ? 'animate-scale-out' : ''}
+  ${!showPopup && !isAnimatingOut ? 'hidden' : ''}
+`}
       >
         <div className="bg-card rounded-lg overflow-hidden border border-border">
           <div className="bg-primary text-primary-foreground flex justify-between items-center px-4 py-3">
@@ -121,7 +123,7 @@ const WhatsAppButton: React.FC = () => {
 
           <div className="p-2">
             <a
-              href="https://wa.me/919100900144"
+              href="https://wa.me/919908351768"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-primary hover:bg-primary/90 text-primary-foreground w-full block py-2 rounded-md text-center font-semibold flex items-center justify-center gap-2 text-sm transition-colors"
