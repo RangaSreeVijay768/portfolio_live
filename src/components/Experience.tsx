@@ -5,33 +5,35 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      title: 'Software Development Engineer',
-      company: 'Oscar IT Solutions, Hyderabad',
-      period: 'MAY 2024 – Present',
+      title: 'Software Developer',
+      company: 'Jay Robotix, Hyderabad',
+      period: 'March 2024 – Till date',
       type: 'Full-time',
-      description: 'Working at a growing software development division of a training institute, focusing on full-stack web development and project management.',
+      description: 'Working as a full-stack developer handling both mobile and web projects, integrating modern and legacy systems, and contributing to production-level applications.',
       achievements: [
-        'Utilized Git for version control and integrated CI/CD pipelines for streamlined deployment',
-        'Developed RESTful APIs enabling seamless communication between frontend and backend systems',
-        'Integrated PostgreSQL as database, handling complex queries and optimizing performance',
-        'Ensured responsive and functional applications across various devices without errors'
+        'Developed and maintained full-stack applications using Flutter, Node.js, and PostgreSQL',
+        'Integrated Odoo ERP with custom modules for check-in/out, chat history, and team management',
+        'Built Odoo ERP integrations using JSON-RPC methods for authentication, record management, and Discuss chat features, ensuring seamless interaction between external apps and Odoo backend',
+        'Built secure, location-based attendance tracking system using GPS and proximity logic',
+        'Worked on deploying and maintaining legacy Joomla PHP projects on AWS EC2 instances',
+        'Handled app development and publishing for internal systems on Google Play Store'
       ],
-      tech: ['Git', 'REST APIs', 'PostgreSQL', 'CI/CD', 'Responsive Design']
+      tech: ['Flutter', 'Node.js', 'PostgreSQL', 'AWS EC2', 'Odoo', 'Joomla', 'Git']
     },
     {
       id: 2,
       title: 'Software Developer Intern',
       company: '7dots Smart Solutions (OPC) Pvt Ltd., Hyderabad',
-      period: 'MAY 2023 – DECEMBER 2023',
+      period: 'May 2023 – Dec 2023',
       type: 'Internship',
-      description: 'Gained hands-on experience in web development and event management systems during my internship period.',
+      description: 'Contributed to the design and development of web-based event management systems as part of a collaborative team, enhancing both frontend usability and backend functionality.',
       achievements: [
-        'Collaborated with team of developers and designers to create user-friendly applications',
-        'Developed web platform with CRUD functionalities for effortless event creation and management',
-        'Implemented secure user authentication ensuring data privacy and secure platform access',
-        'Used modern web technologies including Angular, HTML, CSS, JavaScript, Bootstrap, and Figma'
+        'Collaborated closely with developers and UI/UX designers to build intuitive, user-centric web applications',
+        'Developed scalable and maintainable web platforms with full CRUD operations for seamless event creation and management',
+        'Implemented secure user authentication and authorization workflows to protect sensitive user and event data',
+        'Worked with modern frontend technologies and design tools to deliver responsive and visually appealing user interfaces'
       ],
-      tech: ['Angular', 'HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Figma']
+      tech: ['Angular', 'JavaScript', 'HTML', 'CSS', 'Bootstrap', 'Figma']
     }
   ];
 
@@ -52,7 +54,7 @@ const Experience = () => {
     },
     {
       degree: 'Secondary Education',
-      institution: 'Ashoka High School, Proddatur, A.P',
+      institution: 'Aditya High School, Proddatur, A.P',
       period: '2016 – 2018',
       cgpa: '10.0/10',
       university: 'Andhra Pradesh State Board'
@@ -86,24 +88,27 @@ const Experience = () => {
               <Briefcase className="text-blue-400" size={28} />
               Professional Experience
             </h3>
-            
+
             <div className="space-y-8">
               {experiences.map((exp, index) => (
                 <div key={exp.id} className="glass-card p-6 hover:scale-105 transition-all duration-300">
-                  <div className="flex flex-wrap items-start justify-between mb-4">
-                    <div>
-                      <h4 className="text-xl font-semibold text-white mb-2">
+                  <div className="mb-4 space-y-2">
+                    {/* Title and Period in same row */}
+                    <div className="flex items-center justify-between">
+                      <h4 className="text-xl font-semibold text-white">
                         {exp.title}
                       </h4>
-                      <div className="flex items-center gap-2 text-blue-400 mb-2">
-                        <MapPin size={16} />
-                        <span className="text-sm">{exp.company}</span>
-                      </div>
-                    </div>
-                    <div className="text-right">
-                      <div className="flex items-center gap-1 text-gray-400 text-sm mb-1">
+                      <div className="flex items-center gap-1 text-gray-400 text-sm">
                         <Calendar size={14} />
                         {exp.period}
+                      </div>
+                    </div>
+
+                    {/* Company and Type in same row */}
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2 text-blue-400">
+                        <MapPin size={16} />
+                        <span className="text-sm">{exp.company}</span>
                       </div>
                       <span className="px-2 py-1 bg-blue-500/20 text-blue-300 text-xs rounded">
                         {exp.type}
@@ -119,7 +124,7 @@ const Experience = () => {
                     <h5 className="text-sm font-semibold text-white mb-2">Key Achievements:</h5>
                     <ul className="space-y-1">
                       {exp.achievements.map((achievement, idx) => (
-                        <li key={idx} className="text-gray-400 text-sm flex items-start gap-2">
+                        <li key={idx} className="text-gray-300 fs-10 flex items-start gap-2">
                           <div className="w-1.5 h-1.5 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
                           {achievement}
                         </li>
@@ -127,16 +132,16 @@ const Experience = () => {
                     </ul>
                   </div>
 
-                  <div className="flex flex-wrap gap-2">
+                  {/*<div className="flex flex-wrap gap-2">
                     {exp.tech.map((tech, idx) => (
-                      <span 
+                      <span
                         key={idx}
                         className="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded"
                       >
                         {tech}
                       </span>
                     ))}
-                  </div>
+                  </div>*/}
                 </div>
               ))}
             </div>
@@ -148,7 +153,7 @@ const Experience = () => {
               <Award className="text-purple-400" size={28} />
               Education
             </h3>
-            
+
             <div className="space-y-6 mb-12">
               {education.map((edu, index) => (
                 <div key={index} className="glass-card p-6 hover:scale-105 transition-all duration-300">
@@ -174,7 +179,7 @@ const Experience = () => {
               <Award className="text-yellow-400" size={28} />
               Achievements & Awards
             </h3>
-            
+
             <div className="glass-card p-6">
               <ul className="space-y-3">
                 {achievements.map((achievement, index) => (

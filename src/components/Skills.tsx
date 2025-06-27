@@ -42,8 +42,8 @@ const Skills = () => {
         { name: 'NodeJS' },
         { name: 'ExpressJS' },
         { name: 'Python' },
-        { name: 'Java' },
-        { name: 'C' }
+        { name: 'PyQt' },
+        { name: 'C, Java' }
       ]
     },
     {
@@ -70,10 +70,11 @@ const Skills = () => {
       title: 'Databases',
       icon: Database,
       skills: [
-        { name: 'MySQL' },
-        { name: 'PostgreSQL' },
+        { name: 'MySQL, SQLite' },
+        { name: 'PostgreSQL with Drizzle ORM' },
         { name: 'MongoDB' },
         { name: 'Firebase' },
+        { name: 'Supabase' },
       ]
     },
     {
@@ -83,8 +84,7 @@ const Skills = () => {
         { name: 'Amazon Web Services (AWS) ' },
         { name: 'Google Cloud Platform (GCP)' },
         { name: 'CI/CD' },
-        { name: 'Vercel' },
-        { name: 'Netlify' },
+        { name: 'Vercel, Netlify, Render etc.' },
       ]
     },
     {
@@ -217,11 +217,14 @@ const Skills = () => {
 
         {/* Additional Technologies */}
         <div className="mt-16 text-center">
-          <h3 className="text-2xl font-semibold mb-8 text-white">Additional Technologies</h3>
+          <h3 className="text-2xl font-semibold mb-8 text-white">Tools, IDEs & Platforms I Use</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              'Angular', 'Vue.js', 'Next.js', 'GraphQL', 'Redux', 'Jest',
-              'Webpack', 'Sass', 'Figma', 'Postman', 'Linux', 'Nginx'
+              'Android Studio', 'Intellij Ultimate', 'VS Code', 'Postman', 'Figma',
+              'MongoDB Compass', 'pgAdmin', 'Firebase Console',
+              'GitHub Desktop', 'Terminal', 'Command Prompt', 'PowerShell',
+              'Linux (Ubuntu)', 'Docker', 'AWS Console', 'GCP Console', 'Vercel CLI',
+              'Netlify CLI', 'Render Dashboard'
             ].map((tech, index) => (
               <span
                 key={index}

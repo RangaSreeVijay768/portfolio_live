@@ -23,13 +23,31 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      alert('Thank you for your message! I will get back to you soon.');
-      setFormData({ name: '', email: '', subject: '', message: '' });
+
+    try {
+      const response = await fetch("https://ranga-mail-server.vercel.app/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        alert("Thank you for your message! I will get back to you soon.");
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        alert("Something went wrong. Please try again later.");
+        console.error("Email error:", result.message);
+      }
+    } catch (error) {
+      alert("Failed to send message. Please check your network or try again later.");
+      console.error("Network error:", error);
+    } finally {
       setIsSubmitting(false);
-    }, 2000);
+    }
   };
 
   const contactInfo = [
@@ -83,7 +101,7 @@ const Contact = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-6"></div>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology. 
+            I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.
             Feel free to reach out!
           </p>
         </div>
@@ -94,7 +112,7 @@ const Contact = () => {
             <h3 className="text-2xl font-bold mb-8 text-white">
               Let's Connect
             </h3>
-            
+
             <div className="space-y-6 mb-8">
               {contactInfo.map((info, index) => (
                 <a
@@ -138,7 +156,7 @@ const Contact = () => {
                 🟢 Available for Work
               </h4>
               <p className="text-gray-400">
-                I'm currently open to new opportunities and exciting projects. 
+                I'm currently open to new opportunities and exciting projects.
                 Let's discuss how we can work together!
               </p>
             </div>
@@ -150,7 +168,7 @@ const Contact = () => {
               <h3 className="text-2xl font-bold mb-6 text-white">
                 Send Message
               </h3>
-              
+
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
@@ -167,7 +185,7 @@ const Contact = () => {
                     placeholder="John Doe"
                   />
                 </div>
-                
+
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
                     Email Address

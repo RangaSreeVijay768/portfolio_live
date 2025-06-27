@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, Download, Code, Terminal } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Hero = () => {
   const [currentRole, setCurrentRole] = useState(0);
@@ -20,7 +21,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-5">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full animate-float"></div>
@@ -34,7 +35,7 @@ const Hero = () => {
             Hi, I'm{' '}
             <span className="gradient-text">Ranga Sree Vijay</span>
           </h1>
-          
+
           <div className="text-xl md:text-2xl mb-8 h-8">
             <span className="text-gray-300">I'm a </span>
             <span className="gradient-text font-semibold typing-animation">
@@ -42,21 +43,31 @@ const Hero = () => {
             </span>
           </div>
 
-          <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto animate-slide-in-left">
-            Passionate Software Developer with expertise in MERN stack, mobile development, 
+          <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto animate-slide-in-left">
+            Passionate Software Developer with expertise in MERN stack, mobile development,
             and modern web technologies. I love creating innovative solutions and bringing ideas to life.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12 animate-slide-in-right">
-            <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg hover:scale-105 transition-all duration-300 animate-pulse-glow flex items-center gap-2">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8 animate-slide-in-right">
+            <a
+              href="https://drive.google.com/drive/folders/1vlWkqVYme7ws_3PuZsS5t2SF1pqzOabI"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg hover:scale-105 transition-all duration-300 animate-pulse-glow items-center gap-2"
+            >
               <Download size={20} />
               Download Resume
-            </button>
-            
-            <button className="px-8 py-4 glass-card text-white rounded-lg hover:scale-105 hover:bg-white/20 transition-all duration-300 flex items-center gap-2">
-              <Mail size={20} />
-              Get In Touch
-            </button>
+            </a>
+
+            <a
+              href="https://wa.me/919908351768"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 glass-card text-white rounded-lg hover:scale-105 hover:bg-white/20 transition-all duration-300 flex items-center gap-2"
+            >
+              <FaWhatsapp size={20} />
+              Get in Touch
+            </a>
           </div>
 
           <div className="flex justify-center space-x-6 animate-scale-in">
@@ -68,7 +79,7 @@ const Hero = () => {
             >
               <Github size={24} className="group-hover:text-blue-400" />
             </a>
-            
+
             <a
               href="https://www.linkedin.com/in/ranga-sree-vijay-393b9a24b/"
               target="_blank"
@@ -77,7 +88,7 @@ const Hero = () => {
             >
               <Linkedin size={24} className="group-hover:text-blue-400" />
             </a>
-            
+
             <a
               href="mailto:ranga.sreevijay768@gmail.com"
               className="p-3 glass-card rounded-full hover:scale-110 hover:bg-white/20 transition-all duration-300 group"

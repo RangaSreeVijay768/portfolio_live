@@ -1,5 +1,6 @@
 
 import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import WhatsAppButton from './whatsapp_icon';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -40,7 +41,7 @@ const Footer = () => {
               Ranga Sree Vijay
             </h3>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Full Stack Developer passionate about creating innovative solutions 
+              Full Stack Developer passionate about creating innovative solutions
               and building exceptional digital experiences.
             </p>
             <div className="flex space-x-4">
@@ -102,21 +103,17 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="border-t border-gray-800 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-gray-400 text-sm mb-4 md:mb-0 flex items-center gap-2">
-              © {currentYear} Ranga Sree Vijay. Made with 
-              <Heart size={16} className="text-red-500 animate-pulse" />
-              and lots of coffee.
-            </div>
-            
+          <div className="flex justify-center items-center">
             <div className="text-gray-400 text-sm">
-              Built with React & Tailwind CSS
+              © {currentYear} Ranga Sree Vijay. All rights reserved.
             </div>
           </div>
         </div>
 
+        <WhatsAppButton />
+
         {/* Back to Top Button */}
-        <div className="fixed bottom-8 right-8 z-40">
+        {/* <div className="fixed bottom-8 right-8 z-40">
           <a
             href="#home"
             className="p-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full shadow-lg hover:scale-110 transition-all duration-300 animate-bounce"
@@ -136,7 +133,7 @@ const Footer = () => {
               />
             </svg>
           </a>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

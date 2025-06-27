@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import { Github, Link, Code, Zap, User } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -8,81 +9,70 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: 'Wallpapers Mobile App',
+      description: 'Flutter mobile app with rich wallpaper collection, auto-change functionality, and seamless user experience with Google Drive integration.',
+      image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800&h=600',
+      category: 'mobile',
+      tech: ['Flutter', 'Dart', 'Google Drive API', 'PostgreSQL', 'Node', 'Express'],
+      github: 'https://github.com/RangaSreeVijay768/wallpaper_app_flutter',
+      live: 'https://play.google.com/store/apps/details?id=com.ranga.wallpaper2k25',
+      features: ['Auto Wallpaper Change', 'Categories', 'Download Option', 'Offline Access']
+    },
+    {
+      id: 2,
+      title: 'College Management System',
+      description: 'Comprehensive mobile application for college services including website access, fee payment, and material download functionality.',
+      image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800&h=600',
+      category: 'mobile',
+      tech: ['Flutter', 'Dart', 'Google Drive API', 'Firebase', 'PostgreSQL', 'Node', 'Express'],
+      github: 'https://github.com/RangaSreeVijay768/SVCK_Online.git',
+      live: 'https://play.google.com/store/apps/details?id=com.ranga.svck_online',
+      features: ['Student Portal', 'Fee Payment', 'Material Access', 'Notifications']
+    },
+    {
+      id: 3,
       title: 'E-Commerce Website (MERN)',
       description: 'Full-stack e-commerce platform with user authentication, product management, shopping cart, and secure payment integration using Stripe API.',
       image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=800&h=600',
       category: 'web',
       tech: ['React', 'Node.js', 'MongoDB', 'Express', 'Stripe'],
-      github: 'https://ranga-ecommerce.vercel.app',
+      github: 'https://github.com/RangaSreeVijay768/ecommerceWebsite.git',
       live: 'https://ranga-ecommerce.vercel.app',
       features: ['User Authentication', 'Payment Gateway', 'Admin Panel', 'Real-time Updates']
     },
     {
-      id: 2,
+      id: 4,
       title: 'Car Racing Game Website',
       description: 'Interactive car racing game with increasing difficulty levels, score tracking, and responsive design for optimal gaming experience.',
       image: 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&q=80&w=800&h=600',
       category: 'web',
-      tech: ['HTML', 'CSS', 'JavaScript', 'Canvas API'],
-      github: 'https://rangasreevijay768.github.io/Car-Game/',
-      live: 'https://rangasreevijay768.github.io/Car-Game/',
-      features: ['Canvas Animation', 'Score System', 'Responsive Design', 'Sound Effects']
-    },
-    {
-      id: 3,
-      title: 'Social Media Platform',
-      description: 'MERN stack social platform with features like post sharing, image uploads, real-time chat, friend connections, and JWT authentication.',
-      image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800&h=600',
-      category: 'web',
-      tech: ['React', 'Node.js', 'MongoDB', 'Socket.io', 'JWT'],
-      github: '#',
-      live: '#',
-      features: ['Real-time Chat', 'Image Upload', 'User Profiles', 'Privacy Controls']
-    },
-    {
-      id: 4,
-      title: 'Wallpapers Mobile App',
-      description: 'Flutter mobile app with rich wallpaper collection, auto-change functionality, and seamless user experience with Google Drive integration.',
-      image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800&h=600',
-      category: 'mobile',
-      tech: ['Flutter', 'Dart', 'Google Drive API', 'MongoDB'],
-      github: 'https://play.google.com/store/apps/details?id=com.ranga.wallpaper2k25',
-      live: 'https://play.google.com/store/apps/details?id=com.ranga.wallpaper2k25',
-      features: ['Auto Wallpaper Change', 'Categories', 'Download Option', 'Offline Access']
+      tech: ['HTML', 'CSS', 'JavaScript'],
+      github: 'https://github.com/RangaSreeVijay768/Car-Game.git',
+      live: 'https://ranga-car-game.vercel.app/',
+      features: ['Score System', 'Responsive Design', 'Sound Effects']
     },
     {
       id: 5,
-      title: 'College Management System',
-      description: 'Comprehensive mobile application for college services including website access, fee payment, and material download functionality.',
-      image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9d1?auto=format&fit=crop&q=80&w=800&h=600',
-      category: 'mobile',
-      tech: ['Flutter', 'Dart', 'Google Drive API', 'Firebase'],
-      github: '#',
-      live: '#',
-      features: ['Student Portal', 'Fee Payment', 'Material Access', 'Notifications']
-    },
-    {
-      id: 6,
-      title: 'Kitchen Inventory Management',
-      description: 'RESTful API system for kitchen inventory with CRUD operations, complex query handling, and optimized database performance.',
-      image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&q=80&w=800&h=600',
-      category: 'backend',
-      tech: ['Node.js', 'Express', 'PostgreSQL', 'REST API'],
-      github: '#',
-      live: '#',
-      features: ['CRUD Operations', 'Database Optimization', 'API Documentation', 'Data Validation']
+      title: 'Event Management Website',
+      description: 'A web application to manage and organize events with features for event creation, user registration, live updates, and admin controls.',
+      image: 'https://images.unsplash.com/photo-1548092372-0d1bd40894a3?auto=format&fit=crop&q=80&w=800&h=600',
+      category: 'web',
+      tech: ['ReactJS', 'Node.js', 'Express', 'MongoDB', 'Bootstrap'],
+      github: 'https://github.com/rangasreevijay768/event-management',
+      live: 'https://ranga-event-management.vercel.app/',
+      features: ['Event Listing', 'User Registration', 'Admin Panel', 'Live Updates']
     }
+
   ];
 
   const filters = [
     { key: 'all', label: 'All Projects', icon: Code },
     { key: 'web', label: 'Web Apps', icon: Zap },
     { key: 'mobile', label: 'Mobile Apps', icon: User },
-    { key: 'backend', label: 'Backend', icon: Github },
   ];
 
-  const filteredProjects = activeFilter === 'all' 
-    ? projects 
+  const filteredProjects = activeFilter === 'all'
+    ? projects
     : projects.filter(project => project.category === activeFilter);
 
   return (
@@ -104,11 +94,10 @@ const Projects = () => {
             <button
               key={filter.key}
               onClick={() => setActiveFilter(filter.key)}
-              className={`px-6 py-3 rounded-lg transition-all duration-300 flex items-center gap-2 ${
-                activeFilter === filter.key
-                  ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white'
-                  : 'glass-card text-gray-300 hover:text-white hover:scale-105'
-              }`}
+              className={`px-6 py-3 rounded-lg transition-all duration-300 flex items-center gap-2 ${activeFilter === filter.key
+                ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white'
+                : 'glass-card text-gray-300 hover:text-white hover:scale-105'
+                }`}
             >
               <filter.icon size={18} />
               {filter.label}
@@ -119,21 +108,21 @@ const Projects = () => {
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project, index) => (
-            <div 
+            <div
               key={project.id}
               className="project-card animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="relative mb-6 group">
-                <img 
-                  src={project.image} 
+                <img
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-48 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="flex gap-2">
-                    <a 
+                    <a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -142,7 +131,7 @@ const Projects = () => {
                       <Github size={16} />
                     </a>
                     {project.live !== '#' && (
-                      <a 
+                      <a
                         href={project.live}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -152,13 +141,26 @@ const Projects = () => {
                       </a>
                     )}
                   </div>
-                </div>
+                </div> */}
               </div>
 
-              <h3 className="text-xl font-semibold mb-3 text-white">
-                {project.title}
-              </h3>
-              
+              <div className="flex items-center justify-between mb-3">
+                <h3 className="text-xl font-semibold text-white">
+                  {project.title}
+                </h3>
+
+                {project.live && (
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 px-3 py-2.5 bg-blue-500/50 text-white rounded hover:bg-blue-500 transition-all duration-300 text-sm font-medium"
+                  >
+                    <ExternalLink size={18} />
+                  </a>
+                )}
+              </div>
+
               <p className="text-gray-400 mb-4 line-clamp-3">
                 {project.description}
               </p>
@@ -176,7 +178,7 @@ const Projects = () => {
 
               <div className="flex flex-wrap gap-2">
                 {project.tech.map((tech, idx) => (
-                  <span 
+                  <span
                     key={idx}
                     className="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded hover:bg-gray-600 transition-colors duration-300"
                   >
@@ -189,7 +191,7 @@ const Projects = () => {
         </div>
 
         <div className="text-center mt-12">
-          <a 
+          <a
             href="https://github.com/rangasreevijay768"
             target="_blank"
             rel="noopener noreferrer"
