@@ -67,8 +67,8 @@ const Projects = () => {
 
   const filters = [
     { key: 'all', label: 'All Projects', icon: Code },
-    { key: 'web', label: 'Web Apps', icon: Zap },
     { key: 'mobile', label: 'Mobile Apps', icon: User },
+    { key: 'web', label: 'Web Apps', icon: Zap },
   ];
 
   const filteredProjects = activeFilter === 'all'
