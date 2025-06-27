@@ -182,7 +182,7 @@ const Contact = () => {
                     onChange={handleInputChange}
                     required
                     className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-400 transition-all duration-300"
-                    placeholder="John Doe"
+                    placeholder="Full Name"
                   />
                 </div>
 
@@ -198,7 +198,7 @@ const Contact = () => {
                     onChange={handleInputChange}
                     required
                     className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-400 transition-all duration-300"
-                    placeholder="john@example.com"
+                    placeholder="name@example.com"
                   />
                 </div>
               </div>
