@@ -128,7 +128,7 @@ const WhatsAppButton: React.FC = () => {
               rel="noopener noreferrer"
               className="bg-primary hover:bg-primary/90 text-primary-foreground w-full block py-2 rounded-md text-center font-semibold flex items-center justify-center gap-2 text-sm transition-colors"
             >
-              <FaTelegramPlane className="text-lg" />
+              <FaWhatsapp className="text-lg" />
               START CHAT
             </a>
           </div>
