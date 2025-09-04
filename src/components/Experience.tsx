@@ -62,7 +62,7 @@ const Experience = () => {
   ];
 
   const achievements = [
-    'Innovation Certificate from 7dots Smart Solutions (OPC) Pvt Ltd.',
+    'Internship Completion Certificate from 7dots Smart Solutions (OPC) Pvt Ltd.',
     'Consultant Virtual Experience Certificate from Accenture',
     '21st Century Employability Skills Certificate from Wadhwani Foundation',
     '1st Prize in Essay Writing competition at Sri Venkateswara College of Engineering',
