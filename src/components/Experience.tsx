@@ -6,7 +6,7 @@ const Experience = () => {
     {
       id: 1,
       title: 'Software Developer',
-      company: 'Oscar IT Solutions, Hyderabad',
+      company: 'Jay Robotix Learning Pvt Ltd, Hyderabad',
       period: 'May 2024 – Till date',
       type: 'Full-time',
       description: 'Working as a full-stack developer handling both mobile and web projects, integrating modern and legacy systems, and contributing to production-level applications.',
