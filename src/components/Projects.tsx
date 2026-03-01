@@ -9,39 +9,35 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Wallpapers Mobile App',
-      description: 'Flutter mobile app with rich wallpaper collection, auto-change functionality, and seamless user experience with Google Drive integration.',
-      image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800&h=600',
-      category: 'mobile',
-      tech: ['Flutter', 'Dart', 'Google Drive API', 'PostgreSQL', 'Node', 'Express'],
-      github: 'https://github.com/RangaSreeVijay768/wallpaper_app_flutter',
-      live: 'https://play.google.com/store/apps/details?id=com.ranga.wallpaper2k25',
-      features: ['Auto Wallpaper Change', 'Categories', 'Download Option', 'Offline Access']
+      title: 'Vegetable Market Business Management System (Full Stack)',
+      description: 'Full-stack business management platform designed for vegetable market vendors to manage daily transactions, stock entries from farmer trucks, item tracking, sales analytics, and electronic weighing scale integration.',
+      image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=800&h=600',
+      category: 'web',
+      tech: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Bootstrap'],
+      github: 'https://github.com/yourusername/vegetable-market-management.git',
+      live: 'https://your-live-link.com',
+      features: [
+        'Daily Transaction Management',
+        'Stock Entry from Farmer Trucks',
+        'Inventory Tracking by Item',
+        'Sales & Profit Analytics Dashboard',
+        'Electronic Weighing Scale Integration',
+        'Vendor Reports & History'
+      ]
     },
     {
       id: 2,
-      title: 'College Management System',
-      description: 'Comprehensive mobile application for college services including website access, fee payment, and material download functionality.',
-      image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800&h=600',
-      category: 'mobile',
-      tech: ['Flutter', 'Dart', 'Google Drive API', 'Firebase', 'PostgreSQL', 'Node', 'Express'],
-      github: 'https://github.com/RangaSreeVijay768/SVCK_Online.git',
-      live: 'https://play.google.com/store/apps/details?id=com.ranga.svck_online',
-      features: ['Student Portal', 'Fee Payment', 'Material Access', 'Notifications']
-    },
-    {
-      id: 3,
       title: 'E-Commerce Website (MERN)',
       description: 'Full-stack e-commerce platform with user authentication, product management, shopping cart, and secure payment integration using Stripe API.',
       image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=800&h=600',
       category: 'web',
-      tech: ['React', 'Node.js', 'MongoDB', 'Express', 'Stripe'],
+      tech: ['React', 'Node.js', 'MongoDB', 'Express', 'Razorpay'],
       github: 'https://github.com/RangaSreeVijay768/ecommerceWebsite.git',
       live: 'https://ranga-ecommerce.vercel.app',
       features: ['User Authentication', 'Payment Gateway', 'Admin Panel', 'Real-time Updates']
     },
     {
-      id: 4,
+      id: 3,
       title: 'Car Racing Game Website',
       description: 'Interactive car racing game with increasing difficulty levels, score tracking, and responsive design for optimal gaming experience.',
       image: 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&q=80&w=800&h=600',
@@ -52,7 +48,7 @@ const Projects = () => {
       features: ['Score System', 'Responsive Design', 'Sound Effects']
     },
     {
-      id: 5,
+      id: 4,
       title: 'Event Management Website',
       description: 'A web application to manage and organize events with features for event creation, user registration, live updates, and admin controls.',
       image: 'https://images.unsplash.com/photo-1548092372-0d1bd40894a3?auto=format&fit=crop&q=80&w=800&h=600',
@@ -61,7 +57,47 @@ const Projects = () => {
       github: 'https://github.com/rangasreevijay768/event-management',
       live: 'https://ranga-event-management.vercel.app/',
       features: ['Event Listing', 'User Registration', 'Admin Panel', 'Live Updates']
-    }
+    },
+    {
+      id: 5,
+      title: 'Salon Management Mobile App (Full Stack)',
+      description: 'Mobile-based salon management application designed to streamline customer handling, service management, employee tracking, inventory control, transaction recording, and business analytics.',
+      image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=800&h=600',
+      category: 'mobile',
+      tech: ['Flutter', 'Node.js', 'Express', 'PostgreSQL'],
+      github: '',
+      live: '',
+      features: [
+        'Customer Management (CRUD)',
+        'Service Management (CRUD)',
+        'Employee Management (CRUD)',
+        'Inventory Tracking',
+        'Transaction Records & Billing',
+        'Sales & Performance Analytics Dashboard'
+      ]
+    },
+    {
+      id: 6,
+      title: 'College Management System',
+      description: 'Comprehensive mobile application for college services including website access, fee payment, and material download functionality.',
+      image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800&h=600',
+      category: 'mobile',
+      tech: ['Flutter', 'Dart', 'Google Drive API', 'Firebase', 'PostgreSQL', 'Node', 'Express'],
+      github: 'https://github.com/RangaSreeVijay768/SVCK_Online.git',
+      live: '',
+      features: ['Student Portal', 'Fee Payment', 'Material Access', 'Notifications']
+    },
+    {
+      id: 7,
+      title: 'Wallpapers Mobile App',
+      description: 'Flutter mobile app with rich wallpaper collection, auto-change functionality, and seamless user experience with Google Drive integration.',
+      image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800&h=600',
+      category: 'mobile',
+      tech: ['Flutter', 'Dart', 'Google Drive API', 'PostgreSQL', 'Node', 'Express'],
+      github: 'https://github.com/RangaSreeVijay768/wallpaper_app_flutter',
+      live: '',
+      features: ['Auto Wallpaper Change', 'Categories', 'Download Option', 'Offline Access']
+    },
 
   ];
 
