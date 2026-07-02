@@ -5,35 +5,76 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      title: 'Software Developer',
-      company: 'Jay Robotix Learning Pvt Ltd, Hyderabad',
-      period: 'May 2024 – Till date',
-      type: 'Full-time',
-      description: 'Working as a full-stack developer handling both mobile and web projects, integrating modern and legacy systems, and contributing to production-level applications.',
+      title: "Software Developer",
+      company: "Bharat Heavy Engineering Pvt Ltd (BHEPL), Hyderabad",
+      period: "Jan 2025 – Present",
+      type: "Full-time",
+      description:
+        "Developing enterprise-grade Python automation solutions for Indian Railway signalling projects by designing scalable engineering applications, reusable automation frameworks, and full-stack document management systems.",
       achievements: [
-        'Developed and maintained full-stack applications using Flutter, Node.js, and PostgreSQL',
-        'Integrated Odoo ERP with custom modules for check-in/out, chat history, and team management',
-        'Built Odoo ERP integrations using JSON-RPC methods for authentication, record management, and Discuss chat features, ensuring seamless interaction between external apps and Odoo backend',
-        'Built secure, location-based attendance tracking system using GPS and proximity logic',
-        'Worked on deploying and maintaining legacy Joomla PHP projects on AWS EC2 instances',
-        'Handled app development and publishing for internal systems on Google Play Store'
+        "Developed enterprise-grade Python applications and automation frameworks for Indian Railway signalling projects, transforming complex engineering workflows into scalable production-ready software.",
+        "Designed reusable backend architectures, engineering algorithms, and customer-specific business rules using Object-Oriented Programming to deliver reliable and maintainable engineering solutions.",
+        "Automated route generation, signal classification, RFID tags, TINs, adjacent station mapping, direction detection, and engineering validation, reducing manual engineering effort by 40–60%, saving 4–6 hours per project, and generating 500+ engineering objects.",
+        "Automated Tag Data, Application Data, TOC, DXF outputs, and engineering reports containing 1,000+ records, reducing documentation effort by 60–80% and execution time from hours to 2–5 minutes.",
+        "Developed a full-stack Engineering Document Management Platform with automated Excel-to-PDF conversion, processing 1,000+ pages while reducing document preparation time from 3–4 hours to under 5 minutes.",
+        "Built scalable engineering applications using Python (Flask), React.js, PostgreSQL, AWS EC2, Nginx, OpenPyXL, ReportLab, Aspose.Cells, REST APIs, and Git."
       ],
-      tech: ['Flutter', 'Node.js', 'PostgreSQL', 'AWS EC2', 'Odoo', 'Joomla', 'Git']
+      tech: [
+        "Python",
+        "Flask",
+        "React.js",
+        "PostgreSQL",
+        "AWS EC2",
+        "OpenPyXL",
+        "ReportLab",
+        "Aspose.Cells",
+        "REST APIs",
+        "Git"
+      ]
     },
     {
       id: 2,
-      title: 'Software Developer Intern',
-      company: '7dots Smart Solutions (OPC) Pvt Ltd., Hyderabad',
-      period: 'May 2023 – Dec 2023',
-      type: 'Internship',
-      description: 'Contributed to the design and development of web-based event management systems as part of a collaborative team, enhancing both frontend usability and backend functionality.',
+      title: "Full Stack Developer",
+      company: "Learners Byte, Hyderabad",
+      period: "May 2024 – Dec 2024",
+      type: "Full-time",
+      description:
+        "Developed scalable full-stack business applications by designing responsive web interfaces, backend APIs, authentication systems, and database architectures.",
       achievements: [
-        'Collaborated closely with developers and UI/UX designers to build intuitive, user-centric web applications',
-        'Developed scalable and maintainable web platforms with full CRUD operations for seamless event creation and management',
-        'Implemented secure user authentication and authorization workflows to protect sensitive user and event data',
-        'Worked with modern frontend technologies and design tools to deliver responsive and visually appealing user interfaces'
+        "Developed business applications featuring inventory management, billing, reporting, authentication, and customer management using React.js and scalable REST APIs.",
+        "Designed backend architecture using Node.js, Express.js, PostgreSQL, MongoDB, JWT Authentication, and Git with modular, maintainable business logic."
       ],
-      tech: ['Angular', 'JavaScript', 'HTML', 'CSS', 'Bootstrap', 'Figma']
+      tech: [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "MongoDB",
+        "JWT",
+        "Git"
+      ]
+    },
+    {
+      id: 3,
+      title: "Full Stack Developer Intern",
+      company: "7dots Smart Solutions (OPC) Pvt Ltd, Hyderabad",
+      period: "May 2023 – Dec 2023",
+      type: "Internship",
+      description:
+        "Contributed to the development of business web applications by implementing responsive interfaces, backend APIs, and secure authentication modules.",
+      achievements: [
+        "Developed web application modules including CRUD operations, responsive user interfaces, authentication, and backend API integration.",
+        "Worked with React.js, Node.js, Express.js, MySQL, REST APIs, HTML, CSS, JavaScript, and Git while gaining hands-on full-stack development experience."
+      ],
+      tech: [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MySQL",
+        "REST APIs",
+        "JavaScript",
+        "Git"
+      ]
     }
   ];
 
