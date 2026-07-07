@@ -6,29 +6,29 @@ const Experience = () => {
     {
       id: 1,
       title: "Software Developer",
-      company: "Bharat Heavy Engineering Pvt Ltd (BHEPL), Hyderabad",
-      period: "Jan 2025 – Present",
+      company: "Jay Robotix Learning Pvt Ltd, Hyderabad",
+      period: "Mar 2025 – Present",
       type: "Full-time",
       description:
-        "Developing enterprise-grade Python automation solutions for Indian Railway signalling projects by designing scalable engineering applications, reusable automation frameworks, and full-stack document management systems.",
+        "Developing enterprise-grade full-stack applications, engineering automation platforms, and business management systems using Python, React.js, PostgreSQL, and AWS for production environments.",
       achievements: [
-        "Developed enterprise-grade Python applications and automation frameworks for Indian Railway signalling projects, transforming complex engineering workflows into scalable production-ready software.",
-        "Designed reusable backend architectures, engineering algorithms, and customer-specific business rules using Object-Oriented Programming to deliver reliable and maintainable engineering solutions.",
-        "Automated route generation, signal classification, RFID tags, TINs, adjacent station mapping, direction detection, and engineering validation, reducing manual engineering effort by 40–60%, saving 4–6 hours per project, and generating 500+ engineering objects.",
-        "Automated Tag Data, Application Data, TOC, DXF outputs, and engineering reports containing 1,000+ records, reducing documentation effort by 60–80% and execution time from hours to 2–5 minutes.",
-        "Developed a full-stack Engineering Document Management Platform with automated Excel-to-PDF conversion, processing 1,000+ pages while reducing document preparation time from 3–4 hours to under 5 minutes.",
-        "Built scalable engineering applications using Python (Flask), React.js, PostgreSQL, AWS EC2, Nginx, OpenPyXL, ReportLab, Aspose.Cells, REST APIs, and Git."
+        "Develop enterprise-grade full-stack applications, engineering automation platforms, and business management systems using Python, React.js, PostgreSQL, and AWS.",
+        "Design scalable backend architectures, REST APIs, reusable software components, and customer-specific business solutions while collaborating with cross-functional teams to deliver production-ready applications.",
+        "Developed a Company Management System (ERP Platform) featuring employee management, attendance tracking, team management, role-based access, chat history, and location-based check-in/out, automating 8+ business workflows, supporting 100+ employees, and reducing manual administrative effort by an estimated 50–70%.",
+        "Designed and implemented the complete ERP platform using Flutter, Python (Flask), React.js, PostgreSQL, REST APIs, AWS EC2, Nginx, JWT Authentication, and Git.",
+        "Developed an Engineering Project Management System featuring project configuration, engineering data management, report generation, and automated Excel-to-PDF conversion, processing 1,000+ pages while reducing document preparation effort by an estimated 70–85% and execution time from 3–4 hours to under 5 minutes.",
+        "Built a scalable enterprise application using Python (Flask), React.js, PostgreSQL, REST APIs, AWS EC2, Nginx, OpenPyXL, ReportLab, Aspose.Cells, and Git with reusable backend architecture and automated document generation workflows."
       ],
       tech: [
         "Python",
         "Flask",
         "React.js",
+        "Flutter",
         "PostgreSQL",
-        "AWS EC2",
-        "OpenPyXL",
-        "ReportLab",
-        "Aspose.Cells",
         "REST APIs",
+        "AWS EC2",
+        "Nginx",
+        "JWT",
         "Git"
       ]
     },
@@ -58,7 +58,7 @@ const Experience = () => {
       id: 3,
       title: "Full Stack Developer Intern",
       company: "7dots Smart Solutions (OPC) Pvt Ltd, Hyderabad",
-      period: "May 2023 – Dec 2023",
+      period: "May 2023 – Mar 2023",
       type: "Internship",
       description:
         "Contributed to the development of business web applications by implementing responsive interfaces, backend APIs, and secure authentication modules.",
