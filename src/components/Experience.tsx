@@ -6,7 +6,7 @@ const Experience = () => {
     {
       id: 1,
       title: "Software Developer",
-      company: "Jay Robotix Learning Pvt Ltd, Hyderabad",
+      company: "Jay Robotix Learning India Pvt Ltd, Hyderabad",
       period: "Mar 2025 – Present",
       type: "Full-time",
       description:
