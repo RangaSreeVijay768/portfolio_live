@@ -33,12 +33,12 @@ const Projects = () => {
       category: 'mobile',
       tech: ['Flutter', 'Dart', 'Google Drive API', 'PostgreSQL', 'Node', 'Express'],
       github: 'https://github.com/RangaSreeVijay768/wallpaper_app_flutter',
-      live: '',
+      live: 'https://drive.google.com/file/d/1OpkZ8VeJCyDMJ9UFgHKVh0-X4Avj8HGi',
       features: ['Auto Wallpaper Change', 'Categories', 'Download Option', 'Offline Access']
     },
     {
       id: 3,
-      title: 'E-Commerce Website (MERN)',
+      title: 'E-Commerce Demo Website (MERN)',
       description: 'Full-stack e-commerce platform with user authentication, product management, shopping cart, and secure payment integration using Stripe API.',
       image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=800&h=600',
       category: 'web',
@@ -77,7 +77,7 @@ const Projects = () => {
       category: 'mobile',
       tech: ['Flutter', 'Node.js', 'Express', 'PostgreSQL'],
       github: '',
-      live: '',
+      live: 'https://drive.google.com/file/d/1Ztz34aCD6wsG3Ex-BzTmpFl5rp4eOVEw',
       features: [
         'Customer Management (CRUD)',
         'Service Management (CRUD)',
@@ -95,7 +95,7 @@ const Projects = () => {
       category: 'mobile',
       tech: ['Flutter', 'Dart', 'Google Drive API', 'Firebase', 'PostgreSQL', 'Node', 'Express'],
       github: 'https://github.com/RangaSreeVijay768/SVCK_Online.git',
-      live: '',
+      live: 'https://drive.google.com/file/d/12mKCjKFZZOqIN8BUN_M_1qKq0Dy-bB8K',
       features: ['Student Portal', 'Fee Payment', 'Material Access', 'Notifications']
     },
   ];
