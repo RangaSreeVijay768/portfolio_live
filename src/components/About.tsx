@@ -3,7 +3,7 @@ import { User, Award, Calendar, MapPin, Mail } from 'lucide-react';
 
 const About = () => {
   const stats = [
-    { icon: Calendar, label: 'Experience', value: '2+ Years' },
+    { icon: Calendar, label: 'Experience', value: '3+ Years' },
     { icon: Award, label: 'CGPA', value: '8.13/10' },
     { icon: User, label: 'Projects', value: '10+' },
     { icon: MapPin, label: 'Location', value: 'Hyderabad' },
