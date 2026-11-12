@@ -82,21 +82,21 @@ const Experience = () => {
     {
       degree: 'B. Tech in Computer Science & Engineering',
       institution: 'Sri Venkateswara College of Engineering, Kadapa, A.P',
-      period: '2020 – 2024',
+      period: '2021 – 2024',
       cgpa: '8.13/10',
       university: 'JNTU, Anantapur'
     },
     {
       degree: 'Diploma in Computer Science & Engineering',
       institution: 'Government Polytechnic, Proddatur, A.P',
-      period: '2017 – 2021',
+      period: '2018 – 2021',
       cgpa: '8.20/10',
       university: 'AP SBTET'
     },
     {
       degree: 'Secondary Education',
       institution: 'Aditya High School, Proddatur, A.P',
-      period: '2016 – 2018',
+      period: '2017 – 2018',
       cgpa: '10.0/10',
       university: 'Andhra Pradesh State Board'
     }
