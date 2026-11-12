@@ -6,7 +6,7 @@ const Experience = () => {
     {
       id: 1,
       title: "Software Developer",
-      company: "Jay Robotix Learning India Pvt Ltd, Hyderabad",
+      company: "Bharat Heavy Engineering Pvt Ltd, Hyderabad",
       period: "Mar 2025 – Present",
       type: "Full-time",
       description:
@@ -35,7 +35,7 @@ const Experience = () => {
     {
       id: 2,
       title: "Full Stack Developer",
-      company: "Learners Byte, Hyderabad",
+      company: "Oscar IT Solutions, Hyderabad",
       period: "May 2024 – Dec 2024",
       type: "Full-time",
       description:
