@@ -6,10 +6,12 @@ import { FaWhatsapp } from 'react-icons/fa';
 const Hero = () => {
   const [currentRole, setCurrentRole] = useState(0);
   const roles = [
+    'Python Full Stack Developer',
+    'Automation Developer',
     'Full Stack Developer',
     'MERN Stack Expert',
     'Mobile App Developer',
-    'Problem Solver'
+    'Problem Solver',
   ];
 
   useEffect(() => {
